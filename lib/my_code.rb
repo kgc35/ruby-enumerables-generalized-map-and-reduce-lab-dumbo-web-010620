@@ -6,3 +6,14 @@
    end
    array
  end
+
+def reduce(array, starting_point = 0)
+  num_elements = array.length
+  total = 0; 
+  num_elements.times do |index|
+    total = yield(total, array[index])
+  end
+  total += starting_point
+  total
+end
+    
