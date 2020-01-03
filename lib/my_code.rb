@@ -13,5 +13,5 @@ def reduce(array, starting_point = 0)
   num_elements.times do |index|
   answer =  yield(answer, array[index])
   end
-  answer
+  return answer
 end
