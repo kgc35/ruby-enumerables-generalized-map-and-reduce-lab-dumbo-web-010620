@@ -5,4 +5,5 @@
      array[index] = yield(array[index])
    end
    array
-   yield
+ end
+  
